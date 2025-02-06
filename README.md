@@ -3,8 +3,7 @@
 - 🌱 I’m currently learning ESPRESSIF IDF
 - 💞️ I’m looking to collaborate on some IOT projects
 - 📫 How to reach me keerthivaasank17@gmail.com
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+
 
 <!---
 KKeerthivaasan/KKeerthivaasan is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
