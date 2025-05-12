@@ -60,7 +60,7 @@ Welcome to my portfolio! I specialize in embedded systems, circuit design, and a
 
 ## 📫 Contact
 
-- **Email**: [keerthivaasank17@gmail.com](keerthivaasank17@gmail.com)
+- **Email**: [keerthivaasank17@gmail.com](mailto:keerthivaasank17@gmail.com)
 - **LinkedIn**: [keerthivaasan k](https://www.linkedin.com/in/keerthivaasan-k)
 - **Resume**: [Download PDF](link-to-resume)
 
