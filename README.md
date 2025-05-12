@@ -51,8 +51,8 @@ Welcome to my portfolio! I specialize in embedded systems, circuit design, and a
 
 ## 🏭 Internships
 
-**Embedded Developer Intern – ABC Pvt Ltd**  
-*June 2023 – July 2023*  
+**Embedded systems & Internet of things – Kaashiv info tech**
+*July 2023 – July 2023*  
 - Developed UART communication firmware
 - Simulated sensor input via Proteus
 
@@ -60,8 +60,8 @@ Welcome to my portfolio! I specialize in embedded systems, circuit design, and a
 
 ## 📫 Contact
 
-- **Email**: yourname@email.com
-- **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
+- **Email**: keerthivaasank17@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/keerthivaasan-k
 - **Resume**: [Download PDF](link-to-resume)
 
 ---
