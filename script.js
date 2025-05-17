@@ -21,3 +21,28 @@ for (let i = 0; i < coll.length; i++) {
     }
   });
 }
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Project card with thumbnail */
+.project {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #fdfdfd;
+}
+.project img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
