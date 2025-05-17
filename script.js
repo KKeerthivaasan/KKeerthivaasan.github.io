@@ -46,3 +46,26 @@ for (let i = 0; i < coll.length; i++) {
   border-radius: 8px;
   margin-top: 10px;
 }
+form {
+  max-width: 500px;
+  margin-top: 20px;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#statusMsg {
+  margin-top: 10px;
+  font-style: italic;
+}
