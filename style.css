@@ -1,60 +1,28 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f7fb;
-  margin: 0;
-  padding: 0;
-  color: #333;
+/* Dark mode toggle styles */
+body.dark-mode {
+  background-color: #222;
+  color: #eee;
 }
-
-.container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+body.dark-mode .container {
+  background-color: #333;
+  box-shadow: 0 4px 20px rgba(255,255,255,0.05);
 }
-
-header h1 {
-  color: #2c3e50;
-  font-size: 32px;
-}
-
-.highlight {
+body.dark-mode a {
   color: #1abc9c;
 }
 
-.intro {
-  font-size: 18px;
-  margin-bottom: 30px;
+/* Collapsible project section */
+.collapsible {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  transition: background 0.3s;
 }
-
-h2 {
-  color: #2980b9;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 5px;
+.collapsible:hover {
+  background-color: #d0d7dc;
 }
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.project {
-  margin-bottom: 20px;
-  padding-left: 10px;
-}
-
-a {
-  color: #1abc9c;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  margin-top: 40px;
-  font-style: italic;
-  color: #666;
+.content {
+  display: none;
+  margin: 10px 0 20px 15px;
 }
