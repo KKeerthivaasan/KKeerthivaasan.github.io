@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <title>Keerthivaasan K | EEE Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <div class="container">
     <header>
       <h1>Hi, I'm <span class="highlight">Keerthivaasan K</span> – Electrical & Electronics Engineer</h1>
       <p class="intro">Welcome to my portfolio! I specialize in embedded systems, circuit design, and automation. This GitHub showcases my academic and personal engineering projects, technical skills, and certifications.</p>
+      <button id="themeToggle">🌗 Toggle Theme</button>
     </header>
 
     <section>
@@ -26,31 +28,37 @@
       <h2>📁 Projects</h2>
 
       <div class="project">
-        <h3>1. Smart Irrigation System</h3>
-        <p><strong>Tech Stack:</strong> Arduino UNO, Soil Moisture Sensor, Relay, Pump</p>
-        <p><strong>Summary:</strong> Automated irrigation system using real-time soil moisture data.</p>
-        <ul>
-          <li>Water control based on moisture threshold</li>
-          <li>Power-efficient and low-cost design</li>
-        </ul>
-        <p><a href="#">View Code & Circuit</a></p>
+        <h3 class="collapsible">1. Smart Irrigation System</h3>
+        <div class="content">
+          <p><strong>Tech Stack:</strong> Arduino UNO, Soil Moisture Sensor, Relay, Pump</p>
+          <p><strong>Summary:</strong> Automated irrigation system using real-time soil moisture data.</p>
+          <ul>
+            <li>Water control based on moisture threshold</li>
+            <li>Power-efficient and low-cost design</li>
+          </ul>
+          <p><a href="#">View Code & Circuit</a></p>
+        </div>
       </div>
 
       <div class="project">
-        <h3>2. Line Following Robot</h3>
-        <p><strong>Tech Stack:</strong> IR Sensors, Motor Driver, Arduino</p>
-        <p><strong>Summary:</strong> A basic robot that follows a black path on a white surface.</p>
-        <ul>
-          <li>Sensor calibration</li>
-          <li>PWM-based speed control</li>
-        </ul>
+        <h3 class="collapsible">2. Line Following Robot</h3>
+        <div class="content">
+          <p><strong>Tech Stack:</strong> IR Sensors, Motor Driver, Arduino</p>
+          <p><strong>Summary:</strong> A basic robot that follows a black path on a white surface.</p>
+          <ul>
+            <li>Sensor calibration</li>
+            <li>PWM-based speed control</li>
+          </ul>
+        </div>
       </div>
 
       <div class="project">
-        <h3>3. Home Automation with NodeMCU</h3>
-        <p><strong>Tech Stack:</strong> NodeMCU (ESP8266), Blynk App</p>
-        <p><strong>Summary:</strong> Remote control of lights and fans via smartphone app.</p>
-        <p><a href="#">Repository</a></p>
+        <h3 class="collapsible">3. Home Automation with NodeMCU</h3>
+        <div class="content">
+          <p><strong>Tech Stack:</strong> NodeMCU (ESP8266), Blynk App</p>
+          <p><strong>Summary:</strong> Remote control of lights and fans via smartphone app.</p>
+          <p><a href="#">Repository</a></p>
+        </div>
       </div>
     </section>
 
