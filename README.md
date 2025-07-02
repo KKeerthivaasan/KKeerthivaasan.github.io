@@ -6,7 +6,7 @@ Welcome to my portfolio! I specialize in embedded systems, circuit design, and a
 
 ## ⚡ Skills
 
-- **Languages**: C, C++, Python, Embedded C
+- **Languages**: C, C++, Embedded C
 - **Tools**: Arduino, Proteus, Multisim, MATLAB, KiCAD
 - **Hardware**: Microcontrollers (ATmega, STM32, PIC), Oscilloscope, Logic Analyzer
 - **Protocols**: UART, SPI, I2C, CAN
