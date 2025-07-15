@@ -1,0 +1,61 @@
+#define BLYNK_TEMPLATE_ID "YourTemplateID"
+#define BLYNK_TEMPLATE_NAME "SmartIrrigation"
+#define BLYNK_AUTH_TOKEN "YourAuthToken"
+
+#include <WiFi.h>
+#include <WiFiClient.h>
+#include <BlynkSimpleEsp32.h>
+
+char ssid[] = "YourWiFiName";        
+char pass[] = "YourWiFiPassword";    
+
+#define SENSOR_PIN 34       // Soil Moisture (Analog)
+#define RELAY_PIN 23        // Relay for water pump
+
+int threshold = 1500;       // Moisture threshold (adjust after calibration)
+bool manualOverride = false;
+
+BlynkTimer timer;
+
+void checkMoisture() {
+  int moisture = analogRead(SENSOR_PIN);
+  Serial.println(moisture);
+  Blynk.virtualWrite(V0, moisture); // Send to Gauge on Blynk App
+
+  if (!manualOverride) {
+    if (moisture > threshold) {
+      digitalWrite(RELAY_PIN, LOW); // Pump ON
+      Blynk.virtualWrite(V1, 1);    // Update button status
+    } else {
+      digitalWrite(RELAY_PIN, HIGH); // Pump OFF
+      Blynk.virtualWrite(V1, 0);
+    }
+  }
+}
+
+// Manual control via Blynk Button on V1
+BLYNK_WRITE(V1) {
+  int pinValue = param.asInt();
+  manualOverride = true;
+
+  if (pinValue == 1) {
+    digitalWrite(RELAY_PIN, LOW);  // Pump ON
+  } else {
+    digitalWrite(RELAY_PIN, HIGH); // Pump OFF
+  }
+}
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(SENSOR_PIN, INPUT);
+  pinMode(RELAY_PIN, OUTPUT);
+  digitalWrite(RELAY_PIN, HIGH); // OFF initially
+
+  Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
+  timer.setInterval(3000L, checkMoisture); // every 3 sec
+}
+
+void loop() {
+  Blynk.run();
+  timer.run();
+}
